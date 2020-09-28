@@ -21,6 +21,7 @@ namespace example_web_app
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://localhost:80");
                 });
     }
 }
